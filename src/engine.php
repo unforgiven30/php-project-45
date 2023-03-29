@@ -21,7 +21,7 @@ function compareAnswer($correctAnswer, $answer)
     }
 }
 
-function engineGame($question)
+function engineGame($question, $examples)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -29,21 +29,17 @@ function engineGame($question)
     line($question);
     $count = 0;
     while ($count < 3) {
-        $question = generate();
-        line("Question: implode(' ', $question)"); 
+        line("Question: $examples[$count][0])");
         $answer = prompt('Your answer: ');
-        $correctAnswer = caclulate($question);
-        if (compareAnswer($correctAnswer, $answer) {
+        $correctAnswer = $examples[$count][1];
+        if (compareAnswer($correctAnswer, $answer)) {
                 $count = $count + 1;
                 line('Correct!');
             } else {
-                line("'$answer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
+                line("'$answer' is wrong answer ;(. Correct answer was '$examples[$count][1]'.");
                 line("Let's try again,", $name, "!");
                 return;
-            }
         }
     }
     line("Congratulations,", $name, "!");
 }
-}
-
