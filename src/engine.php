@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\engine;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
@@ -36,7 +37,7 @@ function engineGame($question, $examples)
         if (compareAnswer($correctAnswer, $answer)) {
                 $count = $count + 1;
                 line('Correct!');
-            } else {
+        } else {
                 $correct = $examples[$count][2];
                 line("'$answer' is wrong answer ;(. Correct answer was '$correct'.");
                 line("Let's try again,", $name, "!");

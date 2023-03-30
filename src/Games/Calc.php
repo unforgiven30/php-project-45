@@ -5,7 +5,7 @@ namespace BrainGames\Games\calc;
 require_once(__DIR__ . '/../engine.php');
 
 use function BrainGames\engine\compareAnswer;
-use function BrainGames\engine\engineGame; 
+use function BrainGames\engine\engineGame;
 
 function generate()
 {
@@ -21,9 +21,9 @@ function calculate($array)
     $num2 = (int) $array[2];
     if ($array[1] === "+") {
         return $num1 + $num2;
-    }elseif ($array[1] === "-") {
+    } elseif ($array[1] === "-") {
         return $num1 - $num2;
-    }elseif ($array[1] === "*") {
+    } elseif ($array[1] === "*") {
         return $num1 * $num2;
     }
 }
@@ -34,7 +34,7 @@ function collect()
         $examples[$i][0] = generate();
         $examples[$i][1] = implode(' ', $examples[$i][0]);
         $examples[$i][2] = (string) calculate($examples[$i][0]);
-    } 
+    }
     return $examples;
 }
 function calc()
