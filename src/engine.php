@@ -29,14 +29,16 @@ function engineGame($question, $examples)
     line($question);
     $count = 0;
     while ($count < 3) {
-        line("Question: $examples[$count][0])");
+        $example = $examples[$count][1];
+        line("Question: $example");
         $answer = prompt('Your answer: ');
-        $correctAnswer = $examples[$count][1];
+        $correctAnswer = $examples[$count][2];
         if (compareAnswer($correctAnswer, $answer)) {
                 $count = $count + 1;
                 line('Correct!');
             } else {
-                line("'$answer' is wrong answer ;(. Correct answer was '$examples[$count][1]'.");
+                $correct = $examples[$count][2];
+                line("'$answer' is wrong answer ;(. Correct answer was '$correct'.");
                 line("Let's try again,", $name, "!");
                 return;
         }
