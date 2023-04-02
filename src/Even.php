@@ -34,7 +34,7 @@ function gameEven()
                 line('Correct!');
             } else {
                 line("'$answer' is wrong answer ;(. Correct answer was 'yes'.");
-                line("Let's try again,", $name, "!");
+                line("Let's try again, %s!", $name);
                 return;
             }
         }
@@ -44,10 +44,10 @@ function gameEven()
                 line('Correct!');
             } else {
                 line("'$answer' is wrong answer ;(. Correct answer was 'no'.");
-                line("Let's try again,", $name, "!");
+                line("Let's try again, %s!", $name);
                 return;
             }
         }
     }
-    line("Congratulations,", $name, "!");
+    line("Congratulations, %s!", $name);
 }

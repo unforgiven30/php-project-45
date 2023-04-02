@@ -40,9 +40,9 @@ function engineGame($question, $examples)
         } else {
                 $correct = $examples[$count][2];
                 line("'$answer' is wrong answer ;(. Correct answer was '$correct'.");
-                line("Let's try again,", $name, "!");
+                line("Let's try again, %s!", $name);
                 return;
         }
     }
-    line("Congratulations,", $name, "!");
+    line("Congratulations, %s!", $name);
 }
