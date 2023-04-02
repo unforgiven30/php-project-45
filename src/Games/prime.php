@@ -27,7 +27,7 @@ function is_prime($num)
 }
 function generate()
 {
-    $num = rand(0, 20);
+    $num = rand(1, 20);
     return $num;
 }
 function calculate($num)
