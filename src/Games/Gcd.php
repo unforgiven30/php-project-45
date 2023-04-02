@@ -9,8 +9,8 @@ use function BrainGames\engine\engineGame;
 
 function generate()
 {
-    $num1 = rand(0, 100);
-    $num2 = rand(0, 100);
+    $num1 = rand(1, 100);
+    $num2 = rand(1, 100);
     return [$num1, $num2];
 }
 function calculate($array)
