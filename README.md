@@ -5,3 +5,4 @@ https://asciinema.org/a/KLK1UOChvRm81ReU7akzaRbnK
 https://asciinema.org/a/gRpXelCApLzIzXnz4zK1J12Tg - calc
 https://asciinema.org/a/7tBQED4WUVyBmXaWb4IuOKz4b - gcd
 https://asciinema.org/a/3g2OlWDUAJipKA2epJrjjQKVd - progression
+https://asciinema.org/a/xAOHVcu7wMWX1QtVdWxpQkOtd - prime
