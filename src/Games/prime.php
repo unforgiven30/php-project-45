@@ -9,7 +9,6 @@ use function BrainGames\engine\engineGame;
 
 function is_prime(int $num)
 {
-    $num = (int) $num;
     if ($num === 1) {
         return false;
     }
