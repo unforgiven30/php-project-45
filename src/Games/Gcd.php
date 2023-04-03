@@ -13,7 +13,7 @@ function generate()
     $num2 = rand(1, 100);
     return [$num1, $num2];
 }
-function calculate($array)
+function calculate(array $array)
 {
     $num1 = (int) $array[0];
     $num2 = (int) $array[1];

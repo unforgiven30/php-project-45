@@ -7,7 +7,7 @@ require_once(__DIR__ . '/../engine.php');
 use function BrainGames\engine\compareAnswer;
 use function BrainGames\engine\engineGame;
 
-function is_prime($num)
+function is_prime(int $num)
 {
     $num = (int) $num;
     if ($num === 1) {
@@ -30,7 +30,7 @@ function generate()
     $num = rand(1, 20);
     return $num;
 }
-function calculate($num)
+function calculate(int $num)
 {
     if (is_prime($num)) {
         return 'yes';

@@ -15,7 +15,7 @@ function generate()
     return [$num1, $operation[rand(0, 2)], $num2];
 }
 
-function calculate($array)
+function calculate(array $array)
 {
     $num1 = (int) $array[0];
     $num2 = (int) $array[2];

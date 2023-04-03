@@ -13,7 +13,7 @@ if (file_exists($autoloadPath1)) {
 use function cli\line;
 use function cli\prompt;
 
-function compareAnswer($correctAnswer, $answer)
+function compareAnswer(string $correctAnswer, string $answer)
 {
     if ($correctAnswer === $answer) {
         return true;
@@ -22,7 +22,7 @@ function compareAnswer($correctAnswer, $answer)
     }
 }
 
-function engineGame($question, $examples)
+function engineGame(string $question, array $examples)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

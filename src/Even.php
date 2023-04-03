@@ -13,7 +13,7 @@ if (file_exists($autoloadPath1)) {
 use function cli\line;
 use function cli\prompt;
 
-function iseven($n)
+function iseven(int $n)
 {
     return $n % 2 === 0;
 }

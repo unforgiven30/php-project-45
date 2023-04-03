@@ -19,8 +19,9 @@ function generate()
     }
     return $list;
 }
-function calculate($array)
+function calculate(array $array)
 {
+    $list = [];
     $list[0] = $array;
     $len = count($array);
     $n = rand(0, $len - 1);
